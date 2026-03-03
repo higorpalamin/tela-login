@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="shortcut icon" href="cadeado.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -15,9 +15,26 @@
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a). Realize o login com suas credenciais.</p>
+                <p>Seja bem-vindo(a). </p>
+                <p>Realize o login com suas credenciais.</p>
                 <form action="login.php" method="post">
-                    
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="username" id="iusername" required placeholder="email" maxlength="30">
+                        <label for="iusername">Login</label>
+                        
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="password" id="ipassword" required placeholder="senha" minlength="8" maxlength="15">
+                        <label for="ipassword">Senha</label>
+                    </div>
+                    <div id="acessar">
+                        <input type="submit" value="Acessar">
+                    </div>
+                    <div id="esqueci">
+                        <input type="button" value="Esqueci minha senha">
+                    </div>
                 </form>
             </div>
         </div>
