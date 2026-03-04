@@ -14,8 +14,8 @@
 
 body{
     background-image: linear-gradient(to top,#b057ec, #4e2768);
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 main{
@@ -87,13 +87,16 @@ div.campo > span {
 div.campo > input{
     background-color: #cc8ef5;
     font-size: 1em;
-    color: white;
     border: none;
     width: calc(100% - 61px);
     height: 50px;
     padding: 5px;
     border-radius: 10px;
     transform: translateY(-14px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 
@@ -137,7 +140,7 @@ div.campo > input{
       
     div#login{
         width: 70%;
-
+        height: 350px;
     }
 
     div#imagem{
